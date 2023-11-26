@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.648),rgba(0, 0, 0, 0.648)),url(naruto.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    
+
+}
+.logo{
+    width: 130px;
+}
+.cart{
+    width: 25px;
+    height: 25px;
+    margin: 30px;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+    list-style: none;
+
+}
+nav ul li{
+    display: inline-block;
+   margin: 30px 30px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+} 
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    background-color: rgb(254, 255, 255);
+    transform: translate(-50%);
+    transition: width .3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.textbox{
+    color: white;
+    position: absolute;
+    bottom: 8%;
+}
+.textbox p{
+    font-size: 50px;
+    font-weight: 600;
+}
+.textbox h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.textbox h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.row a:hover{
+    background-color: rgb(249, 123, 12);
+    transition: .3s ease-in-out;
+    
+
+}
+.textbox a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid white;
+}
+.textbox span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+
+}
+.icons img{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+   
+   
+}
+.box{
+   
+    transition: .3s ease-out;
+}
+.box:hover{
+    box-shadow: 3px 4px 5px rgb(255, 255, 255);
+    
+}
